@@ -1,0 +1,1168 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+
+.container-main {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    animation: enter 1s ease-in-out;
+    position: relative;
+    transition: filter .5s ease-in-out;
+}
+
+body {
+    position: relative;
+}
+
+
+/*=============================================
+=            Navigation for big screen            =
+=============================================*/
+
+
+
+
+
+.nav-big {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2em 4em;
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+}
+
+.nav-big::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    height: 1%;
+    border-bottom: .1rem solid pink;
+    z-index: 0;
+    animation: from-left .5s ease-in-out;
+}
+
+.nav-big nav {
+    flex: 1;
+    text-align: right;
+    width: 100%;
+    position: relative;
+}
+
+.nav-big nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+}
+
+.nav-big nav ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    transition: transform ease-in-out .25s;
+}
+
+.nav-big nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-big ul li a object {
+    width: 3.5rem;
+    position: relative;
+}
+
+.nav-big ul li a object:hover {
+    cursor: default;
+}
+
+.nav-big .nav-home {
+    border-bottom: .3rem solid pink;
+}
+
+/*----------  Navigation hover effects  ----------*/
+
+.nav-big ul li:hover {
+    transform: scale(1.05);
+}
+
+.nav-big .nav-hover::after {
+    content: '';
+    display: block;
+    border-bottom: .3rem solid pink;
+    width: 1rem;
+    transition: width ease-in-out .7s;
+}
+
+.nav-big .nav-hover:hover::after {
+    content: '';
+    display: block;
+    border-bottom: .3rem solid pink;
+    width: 100%;
+}
+
+.fa-shopping-bag {
+    color: whitesmoke;
+    transition: color ease-in-out .25s,
+    transform ease-in-out .25s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.fa-shopping-bag:hover {
+    color: pink;
+}
+
+
+/*=============================================
+=            Navigation for small screen            =
+=============================================*/
+
+
+
+.nav-small {
+    position: fixed;
+    top: 0;
+    left: -70%;
+    width: 70%;
+    height: 100vh;
+    background: #2d2d2d;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding-top: 10em;
+    transition: left .5s ease-in-out;
+}
+
+.nav-button-open {
+    position: absolute;
+    right: -4rem;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    background: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-button-close {
+    position: absolute;
+    right: -4rem;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    background: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-button-open i, .nav-button-close i {
+    font-size: 2.5rem;
+    color: pink;
+}
+
+.nav-small .fa-shopping-bag {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.nav-small ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.nav-small ul li {
+    list-style: none;
+}
+
+.nav-small ul li a {
+    text-decoration: none;
+    color: rgb(245, 245, 245, .8);
+    font-size: 3rem;
+}
+
+.nav-small .nav-hover {
+    position: relative;
+    transition: transform .25s ease-in-out;
+}
+
+.nav-small .nav-hover:hover {
+    transform: scale(1.05);
+}
+
+.nav-small .nav-hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 10%;
+    border-bottom: .3rem solid pink;
+    transition: width .7s ease-in-out;
+}
+
+.nav-small .nav-hover:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+}
+
+.nav-small .nav-home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    border-bottom: .3rem solid pink;
+}
+
+.nav-small .nav-home {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/*=============================================
+=            Home section            =
+=============================================*/
+
+
+
+
+
+#home-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#home-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
+
+/*----------  Home section/inner content/image part  ----------*/
+
+.home-content-flex-container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 10%;
+    left: 0;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+@keyframes enter {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.home-image-container {
+    position: relative;
+    width: 50rem;
+    height: 40rem;
+    background: url(../IMG/Monica\ Vinar.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: .8;
+    margin: .5rem;
+}
+
+.home-image-container::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 55%;
+    height: 100%;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    z-index: -1;
+}
+
+.home-image-container::before {
+    content: '';
+    position: absolute;
+    top: -.5rem;
+    left: -.5rem;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-top: .1rem solid whitesmoke;
+    border-left: .1rem solid whitesmoke;
+    transition: width ease-in-out .5s,
+    height ease-in-out .5s,
+    opacity ease-in-out .5s;
+}
+
+.home-image-container:hover::before {
+    content: '';
+    width: 101%;
+    height: 101%;
+    opacity: 1;
+}
+
+.home-image-text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 55%;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.home-image-text h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: pink;
+    margin-bottom: 1rem;
+}
+
+.home-image-text p {
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+
+/*----------  Home section/inner content/button part  ----------*/
+
+.home-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home-button-container h1 {
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.button-go-down {
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: none;
+    background: rgb(255, 192, 203, .5);
+    top: 100%;
+    transition: transform ease-in-out .25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top ease-in-out .5s;
+    margin-top: 5rem;
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+.button-go-down i {
+    font-size: 5rem;
+}
+
+.home-button-container a:hover {
+    cursor: pointer;
+    top: 103%;
+    background: rgb(255, 192, 203, .9);
+}
+
+
+
+/*=============================================
+=            Explore collection section             =
+=============================================*/
+
+
+
+
+#explore-collection {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.three-collections-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.collection {
+    width: 25%;
+    height: 65%;
+    margin-top: 2rem;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    opacity: .6;
+    position: relative;
+    overflow: hidden;
+}
+
+.collection:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.gold-inner-hover:hover::before {
+    content: 'gold';
+    position: absolute;
+    color: gold;
+    font-size: 7rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-top: .1rem solid pink;
+    border-left: .1rem solid pink;
+    animation: from-left .5s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes from-left {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+.gold-inner-hover:hover::after {
+    content: 'collection';
+    position: absolute;
+    text-align: center;
+    color: pink;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-top: 1em;
+    top: 50%;
+    right: -40%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-bottom: .1rem solid pink;
+    border-right: .1rem solid pink;
+    animation: from-right .5s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes from-right {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: -40%;
+    }
+}
+
+.silver-inner-hover:hover::before {
+    content: 'silver';
+    position: absolute;
+    color: whitesmoke;
+    font-size: 7rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-top: .1rem solid pink;
+    border-left: .1rem solid pink;
+    animation: from-left .5s ease-in-out;
+    z-index: -1;
+}
+
+.silver-inner-hover:hover::after {
+    content: 'collection';
+    position: absolute;
+    text-align: center;
+    color: pink;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-top: 1em;
+    top: 50%;
+    right: -40%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-bottom: .1rem solid pink;
+    border-right: .1rem solid pink;
+    animation: from-right .5s ease-in-out;
+    z-index: -1;
+}
+
+.bronze-inner-hover:hover::before {
+    content: 'bronze';
+    position: absolute;
+    color: #cd7f32;
+    font-size: 7rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-top: .1rem solid pink;
+    border-left: .1rem solid pink;
+    animation: from-left .5s ease-in-out;
+    z-index: -1;
+}
+
+.bronze-inner-hover:hover::after {
+    content: 'collection';
+    position: absolute;
+    text-align: center;
+    color: pink;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-top: 1em;
+    top: 50%;
+    right: -40%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-bottom: .1rem solid pink;
+    border-right: .1rem solid pink;
+    animation: from-right .5s ease-in-out;
+    z-index: -1;
+}
+
+.gold {
+    background: url(../IMG/Gold\ collection.jpg) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 .6rem .9rem rgb(0, 0, 0, .4);
+}
+
+.silver {
+    background: url(../IMG/Silver\ collection.jpg) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 .6rem .9rem rgb(0, 0, 0, .4);
+}
+
+.bronze {
+    background: url(../IMG/Bronze\ collection.jpg) no-repeat bottom center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 .6rem .9rem rgb(0, 0, 0, .4);
+}
+
+.gold:hover, .silver:hover, .bronze:hover {
+    opacity: 0.4;
+}
+
+/*=============================================
+=            Gold collection            =
+=============================================*/
+
+
+
+
+
+#gold-collection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gold-collection-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    overflow: hidden;
+    padding-bottom: 2em;
+}
+
+.tag-for-collection {
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.tag-gold h1 {
+    font-size: 6.5rem;
+    color: gold;
+    position: relative;
+}
+
+.tag-gold h3 {
+    font-size: 3rem;
+    color: pink;
+}
+
+.products-grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    position: relative;
+}
+
+.bottom-container-blur {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30rem;
+    background: linear-gradient(rgb(236, 210, 214, 0.5), #f7e0e3);
+    
+}
+
+.bottom-container-blur::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30rem;
+    background: whitesmoke;
+    opacity: .2;
+}
+
+.bottom-container-blur:hover {
+    background: linear-gradient(rgb(236, 210, 214, 0.7), #f7e0e3);
+    cursor: pointer;
+}
+
+.products {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+
+.product-inner-image {
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.products:hover .product-inner-image{
+    opacity: .9;
+    background-size: 103%;
+}
+
+.product-inner-info {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.products:hover .product-inner-info {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.product-inner-info h1 {
+    color: #2d2d2d;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.2rem;
+    position: relative;
+}
+
+.product-inner-info h1::before {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 40%;
+    height: .3rem;
+    background: #2d2d2d;
+}
+
+.product-inner-info h2 {
+    color: rgb(45, 45, 45, .7);
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+}
+
+.product-inner-info h3 {
+    text-decoration: none;
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    font-size: 1.5rem;
+    color: rgb(45, 45, 45, .7);
+    font-weight: bolder;
+    transition: color ease-in-out .25s;
+}
+
+.product-inner-info h3:hover {
+    color: rgb(45, 45, 45, .9);
+    cursor: pointer;
+}
+
+
+.gold-item1 {
+    background: url(../IMG/Gold\ collection/gold\ item\ 1.1.jfif) no-repeat center center;
+    background-size: cover;
+}
+.gold-item2 {
+    background: url(../IMG/Gold\ collection/gold\ item\ 2.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.gold-item3 {
+    background: url(../IMG/Gold\ collection/gold\ item\ 3.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.gold-item4 {
+    background: url(../IMG/Gold\ collection/gold\ item\ 4.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.gold-item5 {
+    background: url(../IMG/Gold\ collection/gold\ item\ 5.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.gold-item6 {
+    background: url(../IMG/Gold\ collection/gold\ item\ 6.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.gold-item7 {
+    background: url(../IMG/Gold\ collection/gold\ item\ 7.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.gold-item8 {
+    background: url(../IMG/Gold\ collection/gold\ item\ 8.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/*=============================================
+=            Silver collection            =
+=============================================*/
+
+
+
+
+#silver-collection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.silver-collection-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    overflow: hidden;
+    padding-bottom: 2em;
+}
+
+.tag-silver h1 {
+    font-size: 6.5rem;
+    color: whitesmoke;
+    position: relative;
+}
+
+.tag-silver h3 {
+    font-size: 3rem;
+    color: pink;
+}
+
+.silver-item1 {
+    background: url(../IMG/Silver\ collection/silver\ item\ 1.1.jfif) no-repeat center center;
+    background-size: cover;
+}
+.silver-item2 {
+    background: url(../IMG/Silver\ collection/silver\ item\ 2.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.silver-item3 {
+    background: url(../IMG/Silver\ collection/silver\ item\ 3.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.silver-item4 {
+    background: url(../IMG/Silver\ collection/silver\ item\ 4.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.silver-item5 {
+    background: url(../IMG/Silver\ collection/silver\ item\ 5.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.silver-item6 {
+    background: url(../IMG/Silver\ collection/silver\ item\ 6.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.silver-item7 {
+    background: url(../IMG/Silver\ collection/silver\ item\ 7.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.silver-item8 {
+    background: url(../IMG/Silver\ collection/silver\ item\ 8.1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/*=============================================
+=            Bronze collection            =
+=============================================*/
+
+
+
+
+#bronze-collection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bronze-collection-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    overflow: hidden;
+    padding-bottom: 2em;
+}
+
+.tag-bronze h1 {
+    font-size: 6.5rem;
+    color: #cd7f32;
+    position: relative;
+}
+
+.tag-bronze h3 {
+    font-size: 3rem;
+    color: pink;
+}
+
+.container-modal {
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: transparent;
+    backdrop-filter: blur(.2rem);
+    transition: transform .5s ease-in-out;
+    transform: scale(0);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(245, 245, 245, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    gap: 2rem;
+    border-radius: .2rem;
+}
+
+.modal-x {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform .25s ease-in-out;
+}
+
+.modal-x:hover {
+    animation: modal-x-rotate .5s ease-in-out;
+    transform: scale(1.05);
+}
+
+.mouseleave-animation {
+    animation: modal-x-mouseleave .5s ease-in-out;
+}
+
+@keyframes modal-x-rotate {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes modal-x-mouseleave {
+    0% {
+    transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.modal h3 {
+    font-size: 1.7rem;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+.container-modal-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.modal-btn {
+    padding: 1em;
+    width: 15rem;
+    cursor: pointer;
+    background: rgb(45, 45, 45, .7);
+    border: none;
+    border-radius: .2rem;
+    position: relative;
+    color: rgb(245, 245, 245, .7);
+}
+
+.modal-btn:hover {
+    background: rgb(45, 45, 45, .8);
+}
+
+.modal-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 10%;
+    background: pink;
+    transition: width .25s ease-in-out;
+}
+
+.modal-btn:hover::before {
+    width: 100%;
+}
+/*=============================================
+=            Footer section            =
+=============================================*/
+
+
+
+footer {
+    background: whitesmoke;
+    padding: 4em;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+footer h2, footer h3 {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    color: #2d2d2d;
+}
+
+.container-download-app {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+.container-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-download-icon {
+    font-size: 4rem;
+}
+
+.container-download-icon i {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.container-download-icon i:nth-child(1) {
+    color: green;
+}
+
+.container-download-icon i:nth-child(2) {
+    color: #2d2d2d;
+}
+
+.container-social-icons {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    background: #2d2d2d;
+    padding: 0.5em;
+    color: pink;
+}
+
+.container-social-icons a {
+    cursor: pointer;
+}
+
+.container-social-icons a i {
+    color: pink;
+}
+
+.container-social-icons a i:hover {
+    transform: scale(1.05);
+}
+
+.container-resources a::after {
+    content: '\f35d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: .8rem;
+    margin-left: .5rem;
+}
+
+/*=============================================
+=            Exclusive words/classes           =
+=============================================*/
+
+
+
+
+
+.display-none {
+    display: none;
+}
+
+.home-explore {
+    position: relative;
+    color: pink;
+    z-index: 1;
+}
+
+.home-explore::before {
+    content: '';
+    width: 110%;
+    height: 50%;
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+    background: #2d2d2d;
+    z-index: -1; 
+}
+
+.blur {
+    filter: blur(.2rem);
+}

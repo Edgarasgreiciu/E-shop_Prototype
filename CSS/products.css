@@ -1,0 +1,344 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,700';
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-big .nav-products {
+    border-bottom: .3rem solid pink;
+}
+
+.nav-big .nav-home {
+    border-bottom: none;
+}
+
+.nav-small .nav-home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    border-bottom: none;
+}
+
+.nav-small .nav-home {
+    transform: scale(1);
+}
+
+.nav-small .nav-products {
+    transform: scale(1.05);
+}
+
+.nav-small .nav-products::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    border-bottom: .3rem solid pink;
+}
+
+.container-80-center {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-featured-products {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-featured-products header {
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    text-transform: uppercase;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 6.5rem;
+    color: whitesmoke;
+    position: relative;
+}
+
+header h3 {
+    font-size: 3rem;
+    color: pink;
+}
+
+.container-grid-featured-products-items {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.products {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+
+.product-inner-info h1 {
+    font-size: 1.5rem;
+}
+
+.container-upcoming-collection {
+    width: 100%;
+    height: 20rem;
+    margin: 3rem 0;
+    position: relative;
+}
+
+.container-upcoming-collection::before {
+    content: '';
+    background: url(../IMG/Coming\ collection.jpg) no-repeat bottom right;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 57%;
+    height: 100%;
+    filter: blur(.05rem);
+}
+
+.upcoming-collection-right-banner {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent
+}
+
+.upcoming-collection-right-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.upcmonig-collection-inner-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    transition: background-color .25s ease-in-out;
+}
+
+.upcmonig-collection-inner-text:hover {
+    background-color: rgb(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.upcmonig-collection-inner-text h1 {
+    color: rgb(255, 192, 203, .9);
+}
+
+.upcmonig-collection-inner-text h3 {
+    color: rgb(255, 192, 203, .7);
+}
+
+/*=============================================
+=            All products            =
+=============================================*/
+
+
+
+
+.container-all-products {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-all-products header {
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.filter-bar {
+    width: 100%;
+    height: 7rem;
+    background: rgb(245, 245, 245, .7);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 2rem;
+}
+
+.container-select {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.collection-button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: rgb(45, 45, 45, .8);
+    border-radius: .3rem;
+    transition: transform .25s ease-in-out;
+}
+
+.collection-button:hover, .x:hover {
+    transform: scale(1.05);
+}
+
+.gold-button {
+    color: rgb(255, 215, 0, .7);
+}
+
+.silver-button {
+    color: rgb(245, 245, 245, .7);
+}
+.bronze-button {
+    color: #cd7f32;
+}
+
+.x {
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+    background: rgb(45, 45, 45, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.clicked-button {
+    background: rgb(45, 45, 45, .5);
+    transform: scale(1.05);
+}
+
+form {
+    position: relative;
+    transition: all 1s;
+    width: 20rem;
+    height: 5rem;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: .4rem solid white;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 2rem;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+form .fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #454545;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover {
+    width: 50%;
+    cursor: pointer;
+}
+
+form:hover input {
+    display: block;
+}
+
+form:hover .fa {
+    background: #454545;
+    color: white;
+}
+
+.products-grid-container {
+    margin-bottom: 5rem;
+}
+
+
+/*=============================================
+=            Exclusive words/classes           =
+=============================================*/
+
+
+
+
+
+.products-collar {
+    color: whitesmoke;
+}
+

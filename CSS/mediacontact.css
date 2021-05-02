@@ -1,0 +1,294 @@
+@media (min-width: 900px) and (max-width: 1030px) {
+    .container-80-center {
+        width: 90%;
+    }
+
+    .container-content-grid {
+        gap: 1rem;
+    }
+
+    .google-map {
+        height: 27rem;
+    }
+
+    form {
+        width: 65%;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 900px) {
+    .container-80-center {
+        width: 95%;
+    }
+
+    .container-content-grid {
+        gap: 1rem;
+        margin-top: 7rem;
+    }
+
+    .google-map {
+        height: 25rem;
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 750px) {
+    .container-80-center {
+        width: 95%;
+    }
+
+    .container-content-grid {
+        gap: 1rem;
+        margin-top: 7rem;
+    }
+
+    .google-map {
+        height: 23rem;
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 700px) {
+    .container-80-center {
+        width: 95%;
+    }
+
+    .container-content-grid {
+        gap: 1rem;
+        margin-top: 7rem;
+    }
+
+    .google-map {
+        height: 21rem;
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 650px) {
+    .container-80-center {
+        width: 95%;
+    }
+
+    .container-content-grid {
+        gap: 4rem;
+        margin-top: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 7rem;
+    }
+
+    .google-map {
+        height: 21rem;
+        width: 60%;
+    }
+
+    .container-80-center header {
+        margin-bottom: 7rem;
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    .container-80-center {
+        width: 95%;
+    }
+
+    .container-content-grid {
+        gap: 4rem;
+        margin-top: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10rem;
+    }
+
+    .google-map {
+        height: 21rem;
+        width: 70%;
+    }
+
+    .container-80-center header {
+        margin-bottom: 7rem;
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 500px) {
+    .container-80-center {
+        width: 95%;
+    }
+
+    .container-content-grid {
+        gap: 4rem;
+        margin-top: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10rem;
+    }
+
+    .google-map {
+        height: 23rem;
+        width: 70%;
+    }
+
+    .container-80-center header {
+        margin-bottom: 7rem;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form button {
+        width: 90%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+    .container-80-center {
+        width: 95%;
+    }
+
+    .container-content-grid {
+        gap: 4rem;
+        margin-top: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10rem;
+    }
+
+    .google-map {
+        height: 23rem;
+        width: 80%;
+    }
+
+    .container-80-center header {
+        margin-bottom: 7rem;
+        font-size: 1.6rem;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form button {
+        width: 90%;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 400px) {
+    .container-80-center {
+        width: 95%;
+    }
+
+    .container-content-grid {
+        gap: 4rem;
+        margin-top: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10rem;
+    }
+
+    .google-map {
+        height: 23rem;
+        width: 90%;
+    }
+
+    .container-80-center header {
+        margin-bottom: 7rem;
+        font-size: 1.6rem;
+        letter-spacing: .3rem;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 350px) {
+    .container-80-center {
+        width: 95%;
+    }
+
+    .container-content-grid {
+        gap: 4rem;
+        margin-top: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10rem;
+    }
+
+    .container-small-information i {
+        font-size: 2.7rem;
+    }
+
+    .container-small-information h2 {
+        font-size: 1.3rem;
+    }
+
+    .google-map {
+        height: 23rem;
+        width: 95%;
+    }
+
+    .container-80-center header {
+        margin-bottom: 7rem;
+        font-size: 1.3rem;
+        letter-spacing: .3rem;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+
+

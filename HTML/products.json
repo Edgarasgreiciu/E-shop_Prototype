@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+           "item": "gold-item1",
+           "name": "Sezam v5. ear rings",
+           "price": "149$",
+           "category": "gold collection"
+        },
+        {
+           "item": "gold-item1",
+           "name": "Sezam v5. ear rings",
+           "price": "149$",
+           "category": "gold collection"
+        },
+        {
+           "item": "gold-item1",
+           "name": "Sezam v5. ear rings",
+           "price": "149$",
+           "category": "gold collection"
+        },
+        {
+           "item": "gold-item1",
+           "name": "Sezam v5. ear rings",
+           "price": "149$",
+           "category": "gold collection"
+        },
+        {
+           "item": "silver-item1",
+           "name": "Biure v3. ear rings",
+           "price": "49$",
+           "category": "silver collection"
+        },
+        {
+           "item": "silver-item1",
+           "name": "Biure v3. ear rings",
+           "price": "49$",
+           "category": "silver collection"
+        },
+        {
+           "item": "silver-item1",
+           "name": "Biure v3. ear rings",
+           "price": "49$",
+           "category": "silver collection"
+        },
+        {
+           "item": "silver-item1",
+           "name": "Biure v3. ear rings",
+           "price": "49$",
+           "category": "silver collection"
+        },
+        {
+            "item": "gold-item1",
+            "name": "Sezam v5. ear rings",
+            "price": "149$",
+            "category": "bronze collection"
+         },
+         {
+            "item": "gold-item1",
+            "name": "Sezam v5. ear rings",
+            "price": "149$",
+            "category": "bronze collection"
+         },
+         {
+            "item": "gold-item1",
+            "name": "Sezam v5. ear rings",
+            "price": "149$",
+            "category": "bronze collection"
+         },
+         {
+            "item": "gold-item1",
+            "name": "Sezam v5. ear rings",
+            "price": "149$",
+            "category": "bronze collection"
+         }
+    ]
+}

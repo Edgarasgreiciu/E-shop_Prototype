@@ -1,0 +1,1092 @@
+@media (min-width: 1030px) {
+
+    .nav-small {
+        display: none;
+    }
+
+    .home-image-container {
+        min-width: 50rem;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 5.3rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 5.3rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 5.3rem;
+    }
+
+    footer {
+        padding: 8em;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1030px) {
+
+    .nav-small {
+        display: none;
+    }
+
+    .home-content-flex-container {
+        gap: 5rem;
+    }
+
+    .home-image-container {
+        min-width: 43rem;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 5.1rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 5.1rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 5.1rem;
+    }
+
+
+    .products-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bottom-container-blur {
+        width: 66.5%;
+    }
+
+    .container-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 4em;
+    }
+
+}
+
+@media (min-width: 750px) and (max-width: 900px) {
+
+    .nav-big {
+        display: none;
+    }
+
+    .nav-small {
+        display: flex;
+    }
+
+    .home-content-flex-container {
+        gap: 3rem;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .home-image-container {
+        width: 45rem;
+        height: 33rem;
+    }
+
+    .home-image-text p {
+        font-size: 1.4rem;
+        color: whitesmoke;
+    }
+
+    .home-button-container {
+        margin-right: 15rem;
+    }
+
+    .button-go-down {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        margin-top: 0;
+    }
+
+    .home-button-container a:hover {
+        top: 53%;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 4.5rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 4.5rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 4.5rem;
+    }
+
+    .gold-inner-hover:hover::after {
+        font-size: 2.7rem;
+    }
+
+    .silver-inner-hover:hover::after {
+        font-size: 2.7rem;
+    }
+
+    .bronze-inner-hover:hover::after {
+        font-size: 2.7rem;
+    }
+
+    .products-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bottom-container-blur {
+        width: 66.5%;
+    }
+
+    .container-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        padding: 4em;
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 750px) {
+
+    .nav-big {
+        display: none;
+    }
+
+    .nav-small {
+        display: flex;
+    }
+
+    .home-content-flex-container {
+        gap: 3rem;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .home-image-container {
+        width: 45rem;
+        height: 33rem;
+    }
+
+    .home-image-text p {
+        font-size: 1.4rem;
+        color: whitesmoke;
+    }
+
+    .home-button-container {
+        margin-right: 15rem;
+    }
+
+    .button-go-down {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        margin-top: 0;
+    }
+
+    .home-button-container a:hover {
+        top: 53%;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 7.5rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 7.5rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 7.5rem;
+    }
+
+    .gold-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .silver-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .bronze-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .three-collections-container {
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 50%;
+    }
+
+    .products-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gold-collection-container, .silver-collection-container, .bronze-collection-container {
+        width: 87%;
+    }
+
+    .bottom-container-blur {
+        width: 66.5%;
+    }
+
+    .container-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        padding: 4em;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+
+    .nav-big {
+        display: none;
+    }
+
+    .nav-small {
+        display: flex;
+    }
+
+    .nav-small ul li a {
+        font-size: 2.8rem;
+    }
+
+    .home-content-flex-container {
+        gap: 3rem;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .home-image-container {
+        width: 45rem;
+        height: 33rem;
+    }
+
+    .home-image-text p {
+        font-size: 1.4rem;
+        color: whitesmoke;
+    }
+
+    .home-button-container {
+        margin-right: 10rem;
+    }
+
+    .home-button-container h1 {
+        font-size: 4rem;
+    }
+
+    .button-go-down {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        margin-top: 0;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .home-button-container a:hover {
+        top: 53%;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .gold-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .silver-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .bronze-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .three-collections-container {
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 50%;
+    }
+
+    .products-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gold-collection-container, .silver-collection-container, .bronze-collection-container {
+        width: 80%;
+    }
+
+    .container-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        padding: 4em;
+    }
+
+    .container-download-icon {
+        font-size: 3.5rem;
+    }
+
+    .container-download-app h3 {
+        font-size: 1.5rem;
+    }
+
+    .container-social-icons {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 3em;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 550px) {
+
+    .nav-big {
+        display: none;
+    }
+
+    .nav-small {
+        display: flex;
+    }
+
+    .nav-small ul li a {
+        font-size: 2.7rem;
+    }
+
+    .home-content-flex-container {
+        gap: 3rem;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .home-image-container {
+        width: 41rem;
+        height: 30rem;
+    }
+
+    .home-image-text p {
+        font-size: 1.4rem;
+        color: whitesmoke;
+    }
+
+    .home-button-container {
+        margin-right: 7rem;
+    }
+
+    .home-button-container h1 {
+        font-size: 4rem;
+    }
+
+    .button-go-down {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        margin-top: 0;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .home-button-container a:hover {
+        top: 53%;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .gold-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .silver-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .bronze-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .three-collections-container {
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 50%;
+    }
+
+    .products-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gold-collection-container, .silver-collection-container, .bronze-collection-container {
+        width: 90%;
+    }
+
+    .container-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        padding: 4em;
+    }
+
+    .container-download-icon {
+        font-size: 3.5rem;
+    }
+
+    .container-download-app h3 {
+        font-size: 1.5rem;
+    }
+
+    .container-social-icons {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 3em;
+    }
+
+}
+
+@media (min-width: 450px) and (max-width: 500px) {
+
+    .nav-big {
+        display: none;
+    }
+
+    .nav-small {
+        display: flex;
+    }
+
+    .nav-small ul li a {
+        font-size: 2.5rem;
+    }
+
+    .modal {
+        padding: 3em;
+    }
+
+    .home-content-flex-container {
+        gap: 3rem;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .home-image-container {
+        width: 41rem;
+        height: 30rem;
+    }
+
+    .home-image-text p {
+        font-size: 1.4rem;
+        color: whitesmoke;
+    }
+
+    .home-button-container {
+        margin-right: 5rem;
+    }
+
+    .home-button-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .button-go-down {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        margin-top: 0;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .button-go-down i {
+        font-size: 4rem;
+    }
+
+    .home-button-container a:hover {
+        top: 53%;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .gold-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .silver-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .bronze-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .three-collections-container {
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 70%;
+    }
+
+    .products-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tag-for-collection {
+        flex-direction: column;
+        height: 10rem;
+        gap: 0rem;
+        align-items: flex-start;
+    }
+
+    .tag-gold h1, .tag-silver h1, .tag-bronze h1 {
+        font-size: 5rem;
+    }
+    
+    .tag-gold h3, .tag-silver h3, .tag-bronze h3 {
+        font-size: 2.5rem;
+    }
+
+    .gold-collection-container, .silver-collection-container, .bronze-collection-container {
+        width: 70%;
+    }
+
+    .container-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        padding: 4em;
+    }
+
+    .container-download-icon {
+        font-size: 3.5rem;
+    }
+
+    .container-download-app h3 {
+        font-size: 1.5rem;
+    }
+
+    .container-social-icons {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 3em;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+
+    .nav-big {
+        display: none;
+    }
+
+    .nav-small {
+        display: flex;
+    }
+
+    .nav-small ul li a {
+        font-size: 2rem;
+    }
+
+    .modal {
+        padding: 2.5em;
+    }
+
+    .home-content-flex-container {
+        gap: 5rem;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .home-image-container {
+        width: 35rem;
+        height: 33rem;
+    }
+
+    .home-image-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-image-text p {
+        font-size: 1.3rem;
+        color: whitesmoke;
+    }
+
+    .home-button-container {
+        margin-right: 5rem;
+    }
+
+    .home-button-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .button-go-down {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        margin-top: 0;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .button-go-down i {
+        font-size: 4rem;
+    }
+
+    .home-button-container a:hover {
+        top: 53%;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 6.5rem;
+    }
+
+    .gold-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .silver-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .bronze-inner-hover:hover::after {
+        font-size: 3.7rem;
+    }
+
+    .three-collections-container {
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 70%;
+    }
+
+    .products-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tag-for-collection {
+        flex-direction: column;
+        height: 10rem;
+        gap: 0rem;
+        align-items: flex-start;
+    }
+
+    .tag-gold h1, .tag-silver h1, .tag-bronze h1 {
+        font-size: 5rem;
+    }
+    
+    .tag-gold h3, .tag-silver h3, .tag-bronze h3 {
+        font-size: 2.5rem;
+    }
+
+    .gold-collection-container, .silver-collection-container, .bronze-collection-container {
+        width: 70%;
+    }
+
+    .container-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        padding: 4em;
+    }
+
+    .container-download-icon {
+        font-size: 3.5rem;
+    }
+
+    .container-download-app h3 {
+        font-size: 1.5rem;
+    }
+
+    .container-social-icons {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 3em;
+    }
+
+}
+
+@media (min-width: 350px) and (max-width: 400px) {
+
+    .nav-big {
+        display: none;
+    }
+
+    .nav-small {
+        display: flex;
+    }
+
+    .nav-small ul li a {
+        font-size: 2rem;
+    }
+
+    .modal {
+        padding: 5em;
+    }
+
+    .container-modal-buttons {
+        flex-direction: column;
+    }
+
+    .modal-btn {
+        padding: .5em;
+        width: 15rem;
+    }
+
+    .home-content-flex-container {
+        gap: 5rem;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .home-image-container {
+        width: 30rem;
+        height: 33rem;
+    }
+
+    .home-image-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-image-text p {
+        font-size: 1.3rem;
+        color: whitesmoke;
+    }
+
+    .home-button-container {
+        margin-right: 7rem;
+    }
+
+    .home-button-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .button-go-down {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        margin-top: 0;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .button-go-down i {
+        font-size: 3.5rem;
+    }
+
+    .home-button-container a:hover {
+        top: 53%;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 5rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 5rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 5rem;
+    }
+
+    .gold-inner-hover:hover::after {
+        font-size: 3rem;
+    }
+
+    .silver-inner-hover:hover::after {
+        font-size: 3rem;
+    }
+
+    .bronze-inner-hover:hover::after {
+        font-size: 3rem;
+    }
+
+    .three-collections-container {
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 70%;
+    }
+
+    .products-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tag-for-collection {
+        flex-direction: column;
+        height: 10rem;
+        gap: 0rem;
+        align-items: flex-start;
+    }
+
+    .tag-gold h1, .tag-silver h1, .tag-bronze h1 {
+        font-size: 5rem;
+    }
+    
+    .tag-gold h3, .tag-silver h3, .tag-bronze h3 {
+        font-size: 2.5rem;
+    }
+
+    .gold-collection-container, .silver-collection-container, .bronze-collection-container {
+        width: 70%;
+    }
+
+    .container-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        padding: 4em;
+    }
+
+    .container-download-icon {
+        font-size: 3.5rem;
+    }
+
+    .container-download-app h3 {
+        font-size: 1.5rem;
+    }
+
+    .container-social-icons {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 3em 0;
+        align-items: flex-start;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 350px) {
+
+    .nav-big {
+        display: none;
+    }
+
+    .nav-small {
+        display: flex;
+    }
+
+    .nav-small ul li a {
+        font-size: 2rem;
+    }
+
+    .modal {
+        padding: 5em;
+    }
+
+    .container-modal-buttons {
+        flex-direction: column;
+    }
+
+    .modal-btn {
+        padding: .5em;
+        width: 15rem;
+    }
+
+    .home-content-flex-container {
+        gap: 3rem;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .home-image-container {
+        width: 25rem;
+        height: 33rem;
+    }
+
+    .home-image-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-image-text p {
+        font-size: 1.2rem;
+        color: whitesmoke;
+    }
+
+    .home-button-container {
+        margin-right: 7rem;
+    }
+
+    .home-button-container h1 {
+        font-size: 3rem;
+    }
+
+    .button-go-down {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        margin-top: 0;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .button-go-down i {
+        font-size: 3rem;
+    }
+
+    .home-button-container a:hover {
+        top: 53%;
+    }
+
+    .gold-inner-hover:hover::before {
+        font-size: 4.5rem;
+    }
+
+    .silver-inner-hover:hover::before {
+        font-size: 4.5rem;
+    }
+
+    .bronze-inner-hover:hover::before {
+        font-size: 4.5rem;
+    }
+
+    .gold-inner-hover:hover::after {
+        font-size: 3rem;
+    }
+
+    .silver-inner-hover:hover::after {
+        font-size: 3rem;
+    }
+
+    .bronze-inner-hover:hover::after {
+        font-size: 3rem;
+    }
+
+    .three-collections-container {
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 70%;
+    }
+
+    .products-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tag-for-collection {
+        flex-direction: column;
+        height: 10rem;
+        gap: 0rem;
+        align-items: flex-start;
+    }
+
+    .tag-gold h1, .tag-silver h1, .tag-bronze h1 {
+        font-size: 5rem;
+    }
+    
+    .tag-gold h3, .tag-silver h3, .tag-bronze h3 {
+        font-size: 2.5rem;
+    }
+
+    .gold-collection-container, .silver-collection-container, .bronze-collection-container {
+        width: 70%;
+    }
+
+    .container-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        padding: 4em;
+    }
+
+    .container-download-icon {
+        font-size: 3.5rem;
+    }
+
+    .container-download-app h3 {
+        font-size: 1.5rem;
+    }
+
+    .container-social-icons {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 3em 0;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 300px), screen and (max-height: 500px) {
+    
+    .home-content-flex-container {
+        gap: 1rem;
+    }
+
+    .home-button-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .button-go-down {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        margin-top: 0;
+        width: 5rem;
+        height: 5rem;
+    }
+}

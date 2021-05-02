@@ -1,0 +1,228 @@
+.nav-big .nav-contact {
+    border-bottom: .3rem solid pink;
+}
+
+.nav-big .nav-home {
+    border-bottom: none;
+}
+
+.nav-small .nav-home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    border-bottom: none;
+}
+
+.nav-small .nav-home {
+    transform: scale(1);
+}
+
+.nav-small .nav-contact {
+    transform: scale(1.05);
+}
+
+.nav-small .nav-contact::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    border-bottom: .3rem solid pink;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-80-center {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+}
+
+.google-map {
+    height: 30rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-contact-info::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    width: .5%;
+    height: 120%;
+    background: rgb(245, 245, 245, .8);
+}
+
+.container-small-information {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: rgb(245, 245, 245, .8);
+}
+
+.container-small-information i {
+    font-size: 3.5rem;
+    color: rgb(255, 192, 203, .9);
+}
+
+.container-small-information h2 {
+    font-size: 1.5rem;
+    color: rgb(255, 192, 203, .7);
+    text-transform: uppercase;
+}
+
+.container-contact-side-part {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.container-80-center header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(245, 245, 245, .8);
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    position: relative;
+    letter-spacing: .5rem;
+}
+
+.container-80-center header::before {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 66.6%;
+    border-bottom: .5rem solid pink;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+form input {
+    border: none;
+    background: none;
+    border-bottom: .1rem solid pink;
+    height: 3rem;
+    width: 50%;
+    position: relative;
+    color: rgb(245, 245, 245, .7);
+}
+
+.form-row {
+    display: flex;
+    gap: .5rem;
+}
+
+form textarea {
+    border: none;
+    background: none;
+    border-bottom: .1rem solid pink;
+    height: 10rem;
+    max-height: 10rem;
+    min-height: 10rem;
+    max-width: 100%;
+    min-width: 100%;
+    color: rgb(245, 245, 245, .7);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border-bottom: .2rem solid pink;
+}
+
+form button {
+    padding: .5em;
+    font-size: 1.3rem;
+    font-weight: 550;
+    letter-spacing: .3rem;
+    border-radius: .3rem;
+    position: relative;
+    border: none;
+    transition: transform .25s ease-in-out;
+    cursor: pointer;
+    opacity: .8;
+    width: 80%;
+    margin: 0 auto;
+}
+
+form button:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.button-send::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(255, 192, 203, .4);
+    border-radius: .3rem;
+    transition: width .6s ease-in-out;
+}
+
+.button-send::after {
+    content: 'Send a message';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+    font-size: 1.3rem;
+    font-weight: 550;
+    letter-spacing: .3rem;
+    border-radius: .3rem;
+    position: relative;
+    border: none;
+    text-transform: uppercase;
+}
+
+form button:hover::before {
+    width: 100%;
+}
+
+

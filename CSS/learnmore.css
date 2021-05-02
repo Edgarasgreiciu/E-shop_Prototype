@@ -1,0 +1,340 @@
+.nav-big .nav-learn {
+    border-bottom: .3rem solid pink;
+}
+
+.nav-big .nav-home {
+    border-bottom: none;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.nav-small .nav-home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    border-bottom: none;
+}
+
+.nav-small .nav-home {
+    transform: scale(1);
+}
+
+.nav-small .nav-learn {
+    transform: scale(1.05);
+}
+
+.nav-small .nav-learn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    border-bottom: .3rem solid pink;
+}
+
+/*=============================================
+=            Team members            =
+=============================================*/
+
+
+
+
+.container-80-center {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-80-center header {
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    text-transform: uppercase;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 6.5rem;
+    color: whitesmoke;
+    position: relative;
+}
+
+header h3 {
+    font-size: 3rem;
+    color: pink;
+}
+
+.container-team-members {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.member-inner-text {
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 1em;
+}
+
+.member-inner-text h1 {
+    margin-bottom: 1rem;
+    color: #242424;
+    letter-spacing: .3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.member-inner-text h1::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    bottom: 0;
+    right: 0%;
+    background: pink;
+    z-index: -1;
+}
+
+.member-lisa .member-inner-text h1::before, .member-monica .member-inner-text h1::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    bottom: 0;
+    left: 0%;
+    background: pink;
+    z-index: -1;
+}
+
+
+.member-inner-text p {
+    color: rgb(36, 36, 36, .7);
+    font-weight: 600;
+}
+
+.member-bob .member-inner-text {
+    margin-left: auto;
+    text-align: right;
+}
+
+.member {
+    width: 60%;
+    height: 20rem;
+    background: rgb(245, 245, 245, .7);
+    position: relative;
+    display: flex;
+}
+
+.member-monica {
+    margin-right: auto;
+}
+
+.monica-image {
+    background: url(../IMG/MonicaPNG.png) no-repeat center center;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 5%;
+}
+
+.member-bob {
+    margin-left: auto;
+}
+
+.bob-image {
+    background: url(../IMG/BobPNG.png) no-repeat center center;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    left: -2%;
+}
+
+.member-lisa {
+    margin-right: auto;
+}
+
+.lisa-image {
+    background: url(../IMG/LisaPNG.png) no-repeat center center;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: -10%;
+}
+
+
+/*=============================================
+=            Happy customers            =
+=============================================*/
+
+
+
+
+.header-div {
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.header-div h1 {
+    font-size: 6.5rem;
+    color: whitesmoke;
+    position: relative;
+}
+
+.header-div h3 {
+    font-size: 3rem;
+    color: pink;
+}
+
+.container-customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.customer {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.customer:hover .customer-image {
+    transform: scale(1.05);
+}
+
+.customer-image {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: url(../IMG/Customer.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.customer-image::before {
+    content: '\f10e';
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: rgb(255, 213, 220);
+}
+
+.customer-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding: 1em;
+}
+
+.container-stars {
+    color: rgb(255, 192, 203, .8);
+    display: flex;
+    gap: .5rem;
+}
+
+.customer-review h3 {
+    color: rgb(245, 245, 245, .7);
+    letter-spacing: .1rem;
+}
+
+.customer-review p {
+    color: rgb(245, 245, 245, .6);
+    text-align: center;
+}
+
+
+/*----------  Swiper.js css  ----------*/
+
+.container-main-customers {
+    position: relative;
+}
+
+.swiper-container {
+    overflow: visible;
+    width: 100vw;
+    position: relative;
+    margin: 0 10em;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translateX(-10%);
+    transition: transform .5s ease-in-out;
+}
+
+.swiper-button-prev:focus {
+    outline: none;
+    color: rgb(255, 192, 203, .9);
+}
+
+.swiper-button-prev::after {
+    content: '\f118';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: rgb(255, 192, 203, .7);
+}
+
+.swiper-button-prev:hover::after {
+    content: '\f118';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: rgb(255, 192, 203, .9);
+    animation: spin .5s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

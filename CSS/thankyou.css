@@ -1,0 +1,23 @@
+.nav-home {
+    border-bottom: none;
+}
+
+.container-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main h1 {
+    font-size: 5rem;
+    color: rgb(255, 192, 203, .8);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.container-main span {
+    color: rgb(245, 245, 245, .8);
+    font-size: 6rem;
+}

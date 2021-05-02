@@ -1,6 +1,6 @@
 # E-shop_Prototype
 
-"Monica Vinar" (fictional name) javascript e-shop without functionality.
+"Monica Vinar" (fictional name) javascript e-shop without any real functionality.
 
 Hello everyone,
 

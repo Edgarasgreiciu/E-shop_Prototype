@@ -14,7 +14,7 @@ fetch('products.json')
             let mapProducts = products.map(funcProducts)
             function funcProducts(item) {
                 return `<div class="products products-array" data-name="${item.name}" data-category="${item.category}">
-                <a class="product-inner-image ${item.item}" href="../HTML/product.html"></a>
+                <a class="product-inner-image ${item.item}" href="product.html"></a>
                 <div class="product-inner-info">
                     <h1>${item.name}</h1>
                     <h2>${item.price}</h2>
